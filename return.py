@@ -18,3 +18,9 @@
 #mission 5
 #will be printed: map, key, torch, coin
 #Because I didn't define a new variable but added it, so if it's not found in the function, it will also search globally.
+
+#mission 6
+#will be printed: potion,shield and in roe below map,key
+#Because in the function I defined a new variable that does not affect the global variable.
+
+
