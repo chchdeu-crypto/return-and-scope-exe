@@ -11,3 +11,15 @@
 #will be printed: 30 ,20
 # Because we called a function with 5 inside which was increased by 10 and multiplied by 2 and the global variable was defined as 20 and did not change. 
 
+#mission 4
+health = 100
+
+def take_damage(damage):
+    health = 100
+    health = health - damage
+    damage = damage + 5
+    print(health)
+    print(damage)
+
+take_damage(30)
+print(health)
