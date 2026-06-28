@@ -24,14 +24,10 @@
 #Because in the function I defined a new variable that does not affect the global variable.
 
 #mission 7
-points = 3
+#will be printed: 20 
+#Because I wrote in the function that I am targeting the global variable, so it does affect it.
 
-def add_points():
-    global points
-    points = points + 7
-    points = points * 2
-    print(points)
-
-add_points()
-print(points)
+#mission 8
+#will be printed: running, reday, wating
+#Because I defined a new variable in each function that doesn't affect the function above it.
 
