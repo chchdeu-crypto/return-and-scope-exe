@@ -23,4 +23,15 @@
 #will be printed: potion,shield and in roe below map,key
 #Because in the function I defined a new variable that does not affect the global variable.
 
+#mission 7
+points = 3
+
+def add_points():
+    global points
+    points = points + 7
+    points = points * 2
+    print(points)
+
+add_points()
+print(points)
 
