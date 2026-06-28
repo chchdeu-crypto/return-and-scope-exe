@@ -31,3 +31,21 @@
 #will be printed: running, reday, wating
 #Because I defined a new variable in each function that doesn't affect the function above it.
 
+#mission 9
+coins = 10
+
+def outer():
+    coins = 5
+
+    def inner():
+        nonlocal coins
+        coins = coins + 3
+        coins = coins * 2
+        print(coins)
+
+    inner()
+    print(coins)
+
+outer()
+print(coins)
+
