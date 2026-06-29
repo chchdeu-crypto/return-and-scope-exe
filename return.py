@@ -67,4 +67,13 @@ full_name=return_full_name("chaim","deusth")
 user_name=upper(full_name)
 print(user_name)
 
+#mission 4
+def cel_to_fah(cell):
+    return cell*9/5+32
+def sentence(mess):
+    return f"the temperature is: {mess}"
+fha=cel_to_fah(38)
+temperature=sentence(fha)
+print(temperature)
+
 
