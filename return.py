@@ -95,4 +95,20 @@ price_of_3_prodact=add_3_prices(50,30,20)
 price_with_disc=add_discount(price_of_3_prodact,20)
 print(price_with_disc)
 
+#mission 7
+def remove_space(password):
+    return password.replace(" ","")
+password_without_space=remove_space("2 1 44")
 
+
+def print_len(password):
+    return len(password)
+len_password=print_len(password_without_space)
+
+def check_len_password(password):
+    if password>8:
+        return True
+    else:
+        return False
+result=check_len_password(len_password)
+print(result)
