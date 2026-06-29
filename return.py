@@ -112,3 +112,20 @@ def check_len_password(password):
         return False
 result=check_len_password(len_password)
 print(result)
+
+#mission 8
+def add_bonus(point):
+    return point+5
+grade_with_bonus=add_bonus(87)
+
+def multiply(num):
+    return num*1.1
+grade_after_mult=multiply(grade_with_bonus)
+print(grade_after_mult)
+def value_between_100(grade):
+    if grade<100:
+        return grade
+    else:
+        return 100
+finel_grade=value_between_100(grade_after_mult)
+print(finel_grade)
