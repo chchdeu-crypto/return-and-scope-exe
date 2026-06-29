@@ -48,6 +48,7 @@ def how_far(move):
     return f"robot moved {move} cm"
 robot_moved=how_far(cm)
 print(robot_moved)
+
 #mission 2
 def add_price_delivery(price):
     return price+10
@@ -56,4 +57,14 @@ def multy_price(price):
 price_with_del=add_price_delivery(340)
 finel_price=multy_price(price_with_del)
 print(finel_price)
+
+#mission 3
+def return_full_name(first_name,last_name):
+    return first_name+ last_name
+def upper(name):
+    return name.upper()
+full_name=return_full_name("chaim","deusth")
+user_name=upper(full_name)
+print(user_name)
+
 
