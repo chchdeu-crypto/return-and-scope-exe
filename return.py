@@ -76,4 +76,15 @@ fha=cel_to_fah(38)
 temperature=sentence(fha)
 print(temperature)
 
+#mission 5
+def damege_health(health,damage):
+    return health-damage
+
+def healing(hell,amou):
+    return hell+amou
+health_after_dam=damege_health(100,25)
+finel_health=healing(health_after_dam,30)
+print(finel_health)
+
+
 
