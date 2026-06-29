@@ -48,5 +48,12 @@ def how_far(move):
     return f"robot moved {move} cm"
 robot_moved=how_far(cm)
 print(robot_moved)
-
+#mission 2
+def add_price_delivery(price):
+    return price+10
+def multy_price(price):
+    return price*2
+price_with_del=add_price_delivery(340)
+finel_price=multy_price(price_with_del)
+print(finel_price)
 
