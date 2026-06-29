@@ -32,20 +32,21 @@
 #Because I defined a new variable in each function that doesn't affect the function above it.
 
 #mission 9
-coins = 10
+#will be printed: 16, 16, 10
+#Because nonlocal tells it not to create a new variable but to use one that wraps me, so it changes it but not the global one.
 
-def outer():
-    coins = 5
+#mission 10
 
-    def inner():
-        nonlocal coins
-        coins = coins + 3
-        coins = coins * 2
-        print(coins)
 
-    inner()
-    print(coins)
+#part 2
+#mission 1
+def converter_to_cm(meter):
+    return meter*100
+cm=converter_to_cm(5)
 
-outer()
-print(coins)
+def how_far(move):
+    return f"robot moved {move} cm"
+robot_moved=how_far(cm)
+print(robot_moved)
+
 
