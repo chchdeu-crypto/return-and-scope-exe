@@ -86,5 +86,13 @@ health_after_dam=damege_health(100,25)
 finel_health=healing(health_after_dam,30)
 print(finel_health)
 
+#mission 6
+def add_3_prices(num1,num2,num3):
+    return num1+num2+num3
+def add_discount(price,disc):
+    return price-(price * (disc/100))
+price_of_3_prodact=add_3_prices(50,30,20)
+price_with_disc=add_discount(price_of_3_prodact,20)
+print(price_with_disc)
 
 
