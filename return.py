@@ -162,3 +162,18 @@ def check_price(price):
         return False
     
 print(check_price(storge))
+
+#misison 11
+def return_3_letters_from_first_name(name):
+    return name[0:3]
+first_name=return_3_letters_from_first_name(input("enter name"))
+def return_3_letters_from_last_name(name):
+    return name[0:3]
+last_name=return_3_letters_from_last_name(input("enter last name"))
+def combine_names(f_name,l_name):
+    return f"{f_name}_{l_name}"
+username=combine_names(first_name,last_name)
+def lowercase_name(name):
+    return name.lower()
+finel_username=lowercase_name(username)
+print(finel_username)
