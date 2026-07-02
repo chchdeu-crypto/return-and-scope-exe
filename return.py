@@ -121,7 +121,7 @@ grade_with_bonus=add_bonus(87)
 def multiply(num):
     return num*1.1
 grade_after_mult=multiply(grade_with_bonus)
-print(grade_after_mult)
+
 def value_between_100(grade):
     if grade<100:
         return grade
@@ -129,3 +129,21 @@ def value_between_100(grade):
         return 100
 finel_grade=value_between_100(grade_after_mult)
 print(finel_grade)
+
+#mission 9
+def lowercase_senttence(sentence):
+    return sentence.lower()
+lower_sentence=lowercase_senttence(input("enter "))
+
+def count_letter_a(sentence):
+    count_a=0
+    for letter in sentence:
+        if letter == "a":
+            count_a+=1
+    return count_a
+a_in_sentence=count_letter_a(lower_sentence)
+
+def print_how_times_a(sentence):
+    return f"the letter a appers {a_in_sentence} times "
+result=print_how_times_a(count_letter_a)
+print(result)
