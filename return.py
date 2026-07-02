@@ -164,16 +164,28 @@ def check_price(price):
 print(check_price(storge))
 
 #misison 11
-def return_3_letters_from_first_name(name):
-    return name[0:3]
-first_name=return_3_letters_from_first_name(input("enter name"))
-def return_3_letters_from_last_name(name):
-    return name[0:3]
-last_name=return_3_letters_from_last_name(input("enter last name"))
-def combine_names(f_name,l_name):
-    return f"{f_name}_{l_name}"
-username=combine_names(first_name,last_name)
-def lowercase_name(name):
-    return name.lower()
-finel_username=lowercase_name(username)
-print(finel_username)
+# def return_3_letters_from_first_name(name):
+#     return name[0:3]
+# first_name=return_3_letters_from_first_name(input("enter name"))
+# def return_3_letters_from_last_name(name):
+#     return name[0:3]
+# last_name=return_3_letters_from_last_name(input("enter last name"))
+# def combine_names(f_name,l_name):
+#     return f"{f_name}_{l_name}"
+# username=combine_names(first_name,last_name)
+# def lowercase_name(name):
+#     return name.lower()
+# finel_username=lowercase_name(username)
+# print(finel_username)
+
+#mission 12
+def calculate_fuel_per_distance(distance,fuel):
+    return distance*fuel
+total_fuel=calculate_fuel_per_distance(int(input("enter distane")),int(input("enter fuel usege")))
+def calculate_fuel_cost(total_fuel,fuel_price):
+    return total_fuel*fuel_price
+cost_fuel=calculate_fuel_cost(total_fuel,int(input("enter fuel price")))
+def divides_cost(cost,pas):
+    return cost/pas
+cost_per_passenger=divides_cost(cost_fuel,int(input("enetr how many pass")))
+print(cost_per_passenger)
