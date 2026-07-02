@@ -222,3 +222,18 @@ def adding_order_reday(txt):
     return f"{txt} -order ready "
 order=adding_order_reday(total_price)
 print(order)
+
+#misison 15
+def calculate_balance(balance,deposit):
+    return balance+deposit
+balance_plus_deposit=calculate_balance(100,50)
+def calculate_new_balance(balance,withdrawal):
+    return balance-withdrawal
+balance_after_withdrawal=calculate_new_balance(balance_plus_deposit,25)
+def check_if_balance_ok(balance):
+    if balance>=0:
+        return "ok"
+    else:
+        return "warning"
+finel_balance=check_if_balance_ok(balance_after_withdrawal)
+print(finel_balance)
