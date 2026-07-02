@@ -191,20 +191,34 @@ print(check_price(storge))
 # print(cost_per_passenger)
 
 #misison 13
-def get_scores_and_sum(num):
-    score_list=[int(num) for num in num.split()]
-    return sum(score_list), len(score_list)
-total_score=get_scores_and_sum(input("enter"))
+# def get_scores_and_sum(num):
+#     score_list=[int(num) for num in num.split()]
+#     return sum(score_list), len(score_list)
+# total_score=get_scores_and_sum(input("enter"))
 
-def calculate_avarge(sum_and_count):
-    total_sum=total_score[0]
-    num_scores=total_score[1]
-    return total_sum/num_scores
-avarge=calculate_avarge(total_score)
-def check_if_pass(num):
-    if num>60:
-        return "pass"
-    else:
-        return "fail"
-finel_result=check_if_pass(avarge)
-print(finel_result)
+# def calculate_avarge(sum_and_count):
+#     total_sum=total_score[0]
+#     num_scores=total_score[1]
+#     return total_sum/num_scores
+# avarge=calculate_avarge(total_score)
+# def check_if_pass(num):
+#     if num>60:
+#         return "pass"
+#     else:
+#         return "fail"
+# finel_result=check_if_pass(avarge)
+# print(finel_result)
+
+#mission 14
+def return_amount(item,num):
+    return f"{num} {item}"
+items=return_amount("computer",4)
+def adding_cost(item,price):
+    amount=int(item.split()[0])
+    price=amount*price
+    return f"for {item} the total price is {price}"
+total_price=adding_cost(items,59)
+def adding_order_reday(txt):
+    return f"{txt} -order ready "
+order=adding_order_reday(total_price)
+print(order)
