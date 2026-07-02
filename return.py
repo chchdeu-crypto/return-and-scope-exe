@@ -131,19 +131,34 @@ finel_grade=value_between_100(grade_after_mult)
 print(finel_grade)
 
 #mission 9
-def lowercase_senttence(sentence):
-    return sentence.lower()
-lower_sentence=lowercase_senttence(input("enter "))
+# def lowercase_senttence(sentence):
+#     return sentence.lower()
+# lower_sentence=lowercase_senttence(input("enter "))
 
-def count_letter_a(sentence):
-    count_a=0
-    for letter in sentence:
-        if letter == "a":
-            count_a+=1
-    return count_a
-a_in_sentence=count_letter_a(lower_sentence)
+# def count_letter_a(sentence):
+#     count_a=0
+#     for letter in sentence:
+#         if letter == "a":
+#             count_a+=1
+#     return count_a
+# a_in_sentence=count_letter_a(lower_sentence)
 
-def print_how_times_a(sentence):
-    return f"the letter a appers {a_in_sentence} times "
-result=print_how_times_a(count_letter_a)
-print(result)
+# def print_how_times_a(sentence):
+#     return f"the letter a appers {a_in_sentence} times "
+# result=print_how_times_a(count_letter_a)
+#print(result)
+
+#mission 10
+def calculate_total_value(price,amount):
+    return price*amount
+toatl_value=calculate_total_value(5,5)
+def calculate_total_with_storge(price):
+    return price+15
+storge=calculate_total_with_storge(toatl_value)
+def check_price(price):
+    if price>100:
+        return True
+    else:
+        return False
+    
+print(check_price(storge))
