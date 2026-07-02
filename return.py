@@ -179,13 +179,32 @@ print(check_price(storge))
 # print(finel_username)
 
 #mission 12
-def calculate_fuel_per_distance(distance,fuel):
-    return distance*fuel
-total_fuel=calculate_fuel_per_distance(int(input("enter distane")),int(input("enter fuel usege")))
-def calculate_fuel_cost(total_fuel,fuel_price):
-    return total_fuel*fuel_price
-cost_fuel=calculate_fuel_cost(total_fuel,int(input("enter fuel price")))
-def divides_cost(cost,pas):
-    return cost/pas
-cost_per_passenger=divides_cost(cost_fuel,int(input("enetr how many pass")))
-print(cost_per_passenger)
+# def calculate_fuel_per_distance(distance,fuel):
+#     return distance*fuel
+# total_fuel=calculate_fuel_per_distance(int(input("enter distane")),int(input("enter fuel usege")))
+# def calculate_fuel_cost(total_fuel,fuel_price):
+#     return total_fuel*fuel_price
+# cost_fuel=calculate_fuel_cost(total_fuel,int(input("enter fuel price")))
+# def divides_cost(cost,pas):
+#     return cost/pas
+# cost_per_passenger=divides_cost(cost_fuel,int(input("enetr how many pass")))
+# print(cost_per_passenger)
+
+#misison 13
+def get_scores_and_sum(num):
+    score_list=[int(num) for num in num.split()]
+    return sum(score_list), len(score_list)
+total_score=get_scores_and_sum(input("enter"))
+
+def calculate_avarge(sum_and_count):
+    total_sum=total_score[0]
+    num_scores=total_score[1]
+    return total_sum/num_scores
+avarge=calculate_avarge(total_score)
+def check_if_pass(num):
+    if num>60:
+        return "pass"
+    else:
+        return "fail"
+finel_result=check_if_pass(avarge)
+print(finel_result)
